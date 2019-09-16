@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UNIVERSE QUIZ</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Saira+Stencil+One&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="quiz-title">
+                <h1>UNIVERSE QUIZ</h1>
+            </div>
+        </div>
+        <div id="content-container">
+            <div class="question-container">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="question">
+                            <div class="question-content">
+                                <h2>Jak nazywa się galaktyka w której znajduje się nasz Układ Słoneczny?</h2>
+                            </div>
+                            <div class="answers">
+                                <button class="answer incorrect">Droga powiatowa</button>
+                                <button class="answer correct">Droga mleczna</button>
+                                <button class="answer incorrect">Route 66</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="question">
+                            <div class="question-content">
+                                <h2>Jak nazywają się naturalne satelity Marsa?</h2>
+                            </div>
+                            <div class="answers">
+                                <button class="answer incorrect">Mateusz i Tadeusz</button>
+                                <button class="answer correct">Deimos i Fobos</button>
+                                <button class="answer incorrect">Flip i Flap</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="question">
+                            <div class="question-content">
+                                <h2>Którą planetą w kolejności od Słońca jest Ziemia?</h2>
+                            </div>
+                            <div class="answers">
+                                <button class="answer correct">3</button>
+                                <button class="answer incorrect">12</button>
+                                <button class="answer incorrect">Ziemia jest w centrum</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+
+                <div class="points-container">
+                    <button class="check-points bottom-buttons">Sprawdź odpowiedzi</button>
+                    <button class="clear bottom-buttons">Zagraj jeszcze raz</button>
+                    <div class="points hide"><h1>Punkty:</h1> <span>0</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="earth">
+        <img src="earth.svg" width="200px">
+    </div>
+    <!-- <a href="https://www.freepik.com/free-photos-vectors/design">Design vector created by freepik - www.freepik.com</a> -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
